@@ -1,10 +1,10 @@
 {
    "analysis": {
       "bucket": true,
-      "copyright_email_author": true,
-      "ecc": true,
-      "keyword": true,
-      "mime": true,
+      "copyright_email_author": false,
+      "ecc": false,
+      "keyword": false,
+      "mime": false,
       "monk": true,
       "nomos": true,
       "package": true
