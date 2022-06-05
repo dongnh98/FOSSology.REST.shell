@@ -482,8 +482,12 @@ f_log_part "Trigger Scan Jobs"
 echo "Fossology URL: $fossology_url"
 echo
 echo "Scan jobs: starting"
-
-options_json=$(jq -n $jq_reuse_args -f $scan_options_file) || f_fatal "JQ operation failed"
+if [ "$reuse" = "true" ]
+then
+    options_json=$(jq -n $jq_reuse_args -f $scan_options_file) || f_fatal "JQ operation failed"
+else
+    options_json=$(jq -f $scan_options_file) || f_fatal "JQ operation failed"
+fi
 f_do_curl POST  jobs -H "$t_auth" \
     -H "Content-Type:application/json" \
     -H "groupName:$group_name" \
