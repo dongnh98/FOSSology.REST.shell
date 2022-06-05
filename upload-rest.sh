@@ -226,7 +226,7 @@ while true; do
     -d | --debug )       debug="true"; shift ;;
     -e | --extra-debug ) debug="true" ; extra_debug="true" ; shift ;;
     -k | --insecure )    curl_insecure="true"; shift ;;
-    -R | --reuse )       reuse="true"; shift ;;
+    -R | --reuse )       reuse="false"; shift ;;
     -t | --api-token )   t_tkn="$2" ; shift; shift ;;
     -n | --username )    t_usr="$2" ; shift; shift ;;
     -p | --password )    t_pwd="$2" ; shift; shift ;;
