@@ -15,8 +15,8 @@
       "new_scanner": true
    },
    "reuse": {
-      "reuse_upload": ,
-      "reuse_group": ,
+      "reuse_upload": "",
+      "reuse_group": "",
       "reuse_main": false,
       "reuse_enhanced": false
    }
