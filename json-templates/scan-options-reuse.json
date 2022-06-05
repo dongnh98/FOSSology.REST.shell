@@ -11,14 +11,14 @@
    },
    "decider": {
       "nomos_monk": true,
-      "bulk_reused": true,
+      "bulk_reused": false,
       "new_scanner": true
    },
    "reuse": {
-      "reuse_upload": $reuse_upload,
-      "reuse_group": $reuse_group,
-      "reuse_main": true,
-      "reuse_enhanced": true
+      "reuse_upload": ,
+      "reuse_group": ,
+      "reuse_main": false,
+      "reuse_enhanced": false
    }
 }
 
